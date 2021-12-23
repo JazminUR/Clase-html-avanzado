@@ -1,0 +1,169 @@
+<!-- EJERCICIO 2 
+Crea una página llamada My Store. Debe tener una tabla con 3 columnas (Artículo, Nombre y Precio). 
+Vea los datos a continuación y cree su tabla:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My store</title>
+</head>
+<body>
+    <table>
+        <caption>
+            <h2>
+                My Store
+            </h2>
+        </caption>
+        <tr style="text-align: center;">
+            <th>Artículo</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Imagén</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>1</td>
+            <td>Mango</td>
+            <td>$12 kg</td>
+            <td>
+                <img 
+                src="https://t2.uc.ltmcdn.com/images/1/1/8/img_propiedades_y_contraindicaciones_del_mango_africano_45811_orig.jpg" 
+                alt="mangos"
+                width="100px">
+            </td>
+           
+        </tr>
+        <tr style="text-align: center;">
+            <td>2</td>
+            <td>Fresas</td>
+            <td>$20 kg</td>
+            <td>
+                <img 
+                    src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2021/02/como-elegir-fresas-dulces.jpg" 
+                    alt="fresitas"
+                    width="100px">
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>3</td>
+            <td>Sandia</td>
+            <td>$15 kg</td>
+            <td>
+                <img 
+                    src="https://www.gob.mx/cms/uploads/article/main_image/78889/SANDIA_blog.jpg" 
+                    alt="sandia"
+                    width="100px">
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>4</td>
+            <td>Platano</td>
+            <td>$18 kg</td>
+            <td>
+                <img 
+                    src="https://static3.elcorreo.com/www/multimedia/202102/04/media/cortadas/salud5-kpVB-U130428513283nUH-624x385@El%20Correo.jpg" 
+                    alt="platanos"
+                    width="100px">
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>5</td>
+            <td>Uvas</td>
+            <td>$30 kg</td>
+            <td>
+                <img 
+                    src="https://static3.abc.es/media/bienestar/2019/07/25/uvas-blancas-2-kTPD--1024x512@abc.jpg" 
+                    alt="uvas"
+                    width="100px">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <a 
+        href="#family">
+                Da click aquí para dirigirte a Mesa familiar
+    </a>
+    </p>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            width: 500px;
+            height: 50px;
+        }
+
+        tr > th {
+            border: 1px solid black;
+            background-color: rgb(185, 185, 223);
+            text-align: center;
+        }
+
+        tr > td {
+            text-align: center;
+        }
+    </style>
+    
+<hr>
+    <!-- Parte 1: Cree una página simple y coloque dos entradas de texto y un botón Enviar en ella. 
+Pregunte por el nombre y la dirección del usuario.
+Parte 2: Pedir un par de cosas más: first name, last name, address, city, country. 
+Organiza las cosas de forma ordenada en una mesa sin bordes.-->
+
+    <label>Nombre de usuario:</label>
+    <input type="text" id="fname" name="fname">
+    <label>Apellido:</label>
+    <input type="text" id="lname" name="lname"><br>
+    <input type="submit" value="Enviar"><br>
+<br>
+<input type="text" value="Primer nombre"><br>
+<input type="text" value="Apellido"><br>
+<input type="text" value="Dirección"><br>
+<input type="text" value="Ciudad"><br>
+<input type="text" value="País"><br>
+<form>
+    <input type ="submit" value="Enviar"/>
+</form>
+<hr>
+<!-- Abra el ejercicio que hizo en INTRO-WEB-2 Ejercicio n. ° 5 .
+En la parte inferior de la página, agregue una tabla sobre los miembros de su familia. 
+Las columnas deben ser:
+Name
+Gender
+Age
+Relationship
+Agregue un enlace en la página que lo llevará a la mesa familiar.-->
+
+<table id="family">
+    <caption>
+        <strong>
+            Familia
+        </strong> 
+    </caption>
+    <tr>
+        <th>Nombre</th>
+        <th>Genero</th>
+        <th>Edad</th>
+        <th>Relación</th>
+    </tr>
+    <tr>
+        <td>Guillermina</td>
+        <td>Mujer</td>
+        <td>53 años</td>
+        <td>Mamá</td>
+    </tr>
+    <tr>
+        <td>Denise</td>
+        <td>Mujer</td>
+        <td>19 años</td>
+        <td>Hermana</td>
+    </tr>
+    <tr>
+        <td>Daniel</td>
+        <td>Hombre</td>
+        <td>33 años</td>
+        <td>Hermano</td>
+    </tr>
+</table>
+</body>
+</html>
